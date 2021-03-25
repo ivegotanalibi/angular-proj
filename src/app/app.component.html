@@ -1,39 +1,18 @@
-<app-navbar></app-navbar>
+<app-navbar id="navbar" class="navbar navbar-dark fixed-top bg-dark"></app-navbar>
 
 
 <div class="container-fluid">
 
   
   <div class="row" id="mainContent">
-    <app-sidebar class="col-sm-4"></app-sidebar>
-    <div class="col-sm-8" id="dashboard">
-      <p>drop content here</p>
+    <app-sidebar id="sidebar" class="col-sm-3 col-md-2 d-none d-sm-block bg-dark sidebar"></app-sidebar>
+    <div class="col-sm-9" id="dashboard">
+     
     </div>
 
   </div>
 
 </div>
 
-<p>
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-</p>
-<div class="row">
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
-      <div class="card card-body">
-        Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
-      <div class="card card-body">
-        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-      </div>
-    </div>
-  </div>
-</div>
 
 <router-outlet></router-outlet>
